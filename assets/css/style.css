@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  padding: 0 30px;
+}
+
+#phone-container {
+  padding: 0 10px;
+}
+
+header {
+  padding: 10px 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  margin: 0 20px 0 0;
+  font-size: 14px;
+}
+header ul li a {
+  color: black;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo,
+#kreditler {
+  padding: 20px 0;
+}
+
+.dil-secimleri {
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  display: none;
+  background-color: white;
+  width: 100px;
+  border: 3px solid gray;
+}
+.dil-secimleri div {
+  margin: 20px 0;
+}
+.dil-secimleri a {
+  display: flex;
+  justify-content: space-around;
+}
+.dil-secimleri img {
+  display: inline;
+  width: 30%;
+}
+
+.search {
+  position: fixed;
+  top: 35px;
+  left: 60px;
+  border: 2px solid grey;
+  display: none;
+  width: 90%;
+}
+.search input {
+  padding: 40px 0px;
+  font-size: 50px;
+  width: 100%;
+}
+
+.phone-header-1 {
+  width: 100%;
+  padding: 20px 0px;
+}
+.phone-header-1 a {
+  margin-left: 10px;
+}
+
+.phone-header-2 i {
+  font-size: 50px;
+}
+
+.overlay {
+  height: 100vh;
+  background-color: aqua;
+  width: 0;
+}
+
+.active {
+  width: 100% !important;
+}
+
+@media (max-width: 576px) {
+  header {
+    display: none;
+  }
+  .dil-secimleri {
+    position: fixed;
+    top: 50px;
+    right: 60px;
+  }
+  .search {
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+  }
+  .search input {
+    padding: 20px 30px;
+    font-size: 15px;
+    width: 100%;
+  }
+}
+@media (min-width: 1140px) {
+  .phone-header-1 {
+    display: none;
+  }
+  .phone-header-2 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

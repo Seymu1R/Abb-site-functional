@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+#container {
+  padding: 0 30px;
+}
+#phone-container{
+    padding: 0 10px;
+}
+header {
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      margin: 0 20px 0 0;
+      font-size: 14px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+
+  padding: 10px 0;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+#logo,
+#kreditler {
+  padding: 20px 0;
+}
+.dil-secimleri {
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  display: none;
+  background-color: white;
+  div {
+    margin: 20px 0;
+  }
+  a {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    display: inline;
+    width: 30%;
+  }
+  width: 100px;
+  border: 3px solid gray;
+}
+.search {
+  position: fixed;
+  top: 35px;
+  left: 60px;
+  border: 2px solid grey;
+  display: none;
+  width: 90%;
+
+  input {
+    padding: 40px 0px ;
+    font-size: 50px;
+    width: 100%;
+  }
+}
+.phone-header-1 {
+  width: 100%;
+  padding: 20px 0px;
+
+  a {
+    margin-left: 10px;
+  }
+}
+.phone-header-2 {
+    i{
+        font-size: 50px;
+    }
+  }
+
+  .overlay{
+    height: 100vh;
+    background-color: aqua;
+    width: 0;
+  }
+  .active{
+    width: 100% !important;
+  }
+$layout-breakpoint-small: 576px;
+$min-width:1140px;
+@media (max-width: $layout-breakpoint-small) {
+  header {
+    display: none;
+  }
+  .dil-secimleri{
+    position: fixed;
+    top: 50px;
+    right:  60px;
+}
+.search{
+    
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    input{
+        padding: 20px 30px ;
+        font-size: 15px;
+        width: 100%;
+    }
+}
+}
+@media(min-width:$min-width){
+    .phone-header-1{
+        display: none;
+    }
+    .phone-header-2{
+        display: none;    
+    }
+    
+}
